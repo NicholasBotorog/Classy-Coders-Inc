@@ -14,7 +14,7 @@ class Employees {
     }
 
     setSalary(amount){
-        this.#salary += amount
+        this.#salary = amount
     }
     
     getStatus(){
@@ -22,9 +22,9 @@ class Employees {
     }
 
     setStatus(command){
-        if(command = 'hire'){
+        if(command === 'hire'){
             this.#isHired = true 
-        } else { 
+        } else if(command === "fire"){ 
             this.#isHired = false 
         }
     }
